@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(42, 87, 165, 0.045); /* Semi-transparent background */
+    height: 100px;
+    width: 93%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 20px 50px; /* Adjusted padding to match the border */
+}
+
+header a {
+    color: burlywood;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+header ul {
+    position: absolute;
+    right: 25vw;
+    top: 8vw;
+}
+
+h1 {
+    left: 8vw;
+    position: absolute;
+    top: 0;
+    color:  #87CEEB;
+    width: 210px;
+    z-index: 100;
+}
+
+.something {
+    background-color: blueviolet;
+}
+
+.siu {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    color: rgb(0, 132, 255);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.siu p1, .siu p2 {
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+.siu a {
+    color: #87CEEB;
+    text-decoration: none;
+    border: 1px solid #87CEEB;
+    font-size: 30px;
+    border-radius: 5px;
+    position: fixed; /* 使用fixed而不是absolute，以便相对于视口定位 */
+    top: 10px; /* 从顶部10px的位置 */
+    right: 10px; /* 从右侧10px的位置 */
+    z-index: 100;
+}
+footer {
+    background-color: rgba(0, 132, 255, 0.8); /* Semi-transparent background */
+    color: rgb(0, 43, 128);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+}
